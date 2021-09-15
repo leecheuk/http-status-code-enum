@@ -1,0 +1,30 @@
+{
+  "name": "http-status-code-enum",
+  "version": "0.1.0",
+  "description": "Http status codes from MDN web docs with status code description",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "/lib"
+  ],
+  "author": {
+    "name": "Cheuk Lee",
+    "email": "dev.cheuk.lee@gmail.com"
+  },
+  "keywords": [
+    "typescript",
+    "express"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0"
+  }
+}
